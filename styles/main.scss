@@ -1,0 +1,12 @@
+@import 'mixins';
+@import 'sliders';
+@import 'nav';
+@import 'title';
+
+html,
+body {
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	font-family: 'K2D', sans-serif;
+}

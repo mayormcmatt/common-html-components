@@ -1,0 +1,103 @@
+.page-title {
+	display: flex;
+	justify-content: flex-end;
+
+	header {
+		width: 50%;
+		height: 50rem;
+		margin-right: 2rem;
+		font-weight: 200;
+
+		h1 {
+			float: right;
+			font-family: 'Old Standard TT', serif;
+			font-size: 2.5rem;
+
+			span {
+				display: block;
+				float: right;
+				clear: right;
+
+				&:nth-child(1) {
+					-webkit-animation: fadein 3s;
+					-moz-animation: fadein 3s;
+					-ms-animation: fadein 3s;
+					-o-animation: fadein 3s;
+					animation: fadein 3s;
+				}
+
+				&:nth-child(2) {
+					-webkit-animation: fadein 4s;
+					-moz-animation: fadein 4s;
+					-ms-animation: fadein 4s;
+					-o-animation: fadein 4s;
+					animation: fadein 4s;
+				}
+
+				&:nth-child(3) {
+					-webkit-animation: fadein 5s;
+					-moz-animation: fadein 5s;
+					-ms-animation: fadein 5s;
+					-o-animation: fadein 5s;
+					animation: fadein 5s;
+				}
+
+				&:nth-child(4) {
+					-webkit-animation: fadein 6s;
+					-moz-animation: fadein 6s;
+					-ms-animation: fadein 6s;
+					-o-animation: fadein 6s;
+					animation: fadein 6s;
+				}
+
+				&:nth-child(5) {
+					-webkit-animation: fadein 7s;
+					-moz-animation: fadein 7s;
+					-ms-animation: fadein 7s;
+					-o-animation: fadein 7s;
+					animation: fadein 7s;
+				}
+			}
+		}
+	}
+}
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes fadein {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes fadein {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@-ms-keyframes fadein {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}

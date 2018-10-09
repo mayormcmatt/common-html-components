@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Common Components</title>
+		<link rel="stylesheet" href="styles/main.css">
+		<link href="https://fonts.googleapis.com/css?family=K2D:100,400" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Old+Standard+TT:200" rel="stylesheet">
+	</head>
+
+	<body>
+		<!-- Nav with left-hand hamburger menu -->
+		<nav class="main-nav">
+			<div class="side-bar close-sidebar">
+				<ul>
+					<li>
+						<a href="javascript:void(0);">
+							<p>New Stereophonic Sound Spectacular</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">
+							<p>Big Fat Greek Salad</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">
+							<p>A Dog Named Wanda</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">
+							<p>Potent Potables</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<ul class="nav-list">
+				<li class="nav-item">
+					<div class="hamburger-container">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+						<div class="bar3"></div>
+					</div>
+				</li>
+
+				<li class="nav-item">
+					<p>Stuff</p>
+					<ul class="dropdown">
+						<li><a href="javascript:void(0);" target="_blank" rel="noopener noreferrer">
+								<p>Widgets</p>
+							</a>
+						</li>
+						<li><a href="javascript:void(0);" target="_blank" rel="noopener noreferrer">
+								<p>Sci-fi Tech</p>
+							</a>
+						</li>
+						<li><a href="javascript:void(0);" target="_blank" rel="noopener noreferrer">
+								<p>Palindromes</p>
+							</a>
+						</li>
+					</ul>
+				</li>
+
+				<li class="nav-item">
+					<p>Things</p>
+					<ul class="dropdown">
+						<li><a href="javascript:void(0);" target="_blank" rel="noopener noreferrer">
+								<p>Squids</p>
+							</a>
+						</li>
+						<li><a href="javascript:void(0);" target="_blank" rel="noopener noreferrer">
+								<p>Squibs</p>
+							</a>
+						</li>
+						<li><a href="javascript:void(0);" target="_blank" rel="noopener noreferrer">
+								<p>Squabs</p>
+							</a>
+						</li>
+						<li><a href="javascript:void(0);" target="_blank" rel="noopener noreferrer">
+								<p>Squaks</p>
+							</a>
+						</li>
+						<li><a href="javascript:void(0);" target="_blank" rel="noopener noreferrer">
+								<p>Squeaks</p>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nav-item">
+					<p>About</p>
+				</li>
+			</ul>
+		</nav>
+
+		<section class="page-title">
+			<header>
+				<h1>
+					<span class="first-line">Hello!</span>
+					<span class="second-line">Welcome to</span>
+					<span class="third-line">my collection of</span>
+					<span class="fourth-line">commonly used components</span>
+					<span class="fifth-line">(and other odds-n'-ends)</span>
+				</h1>
+			</header>
+		</section>
+	</body>
+
+	<script>
+		// BEGIN NAV SCRIPTS
+		const hamburger = document.querySelector('.hamburger-container');
+		const hamburgerLines = hamburger.children;
+		const slideNav = document.querySelector('.side-bar');
+
+		hamburger.addEventListener('click', function () {
+			toggleHamburgerAnimation();
+			toggleSideBar();
+		});
+
+		function toggleHamburgerAnimation() {
+			for (let i = 0; i < hamburgerLines.length; i++) {
+				hamburgerLines[i].classList.toggle('animate-' + i);
+			}
+		}
+
+		function toggleSideBar() {
+			slideNav.classList.contains('close-sidebar') ?
+			slideNav.classList.toggle('open-sidebar') :
+			slideNav.classList.toggle('close-sidebar');
+		}
+		// END NAV SCRIPTS
+	</script>
+
+</html>
