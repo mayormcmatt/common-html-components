@@ -1,17 +1,18 @@
 .page-title {
 	display: flex;
 	justify-content: flex-end;
+	height: 20rem;
 
 	header {
 		width: 50%;
 		height: 50rem;
 		margin-right: 2rem;
-		font-weight: 200;
 
 		h1 {
 			float: right;
 			font-family: 'Old Standard TT', serif;
 			font-size: 2.5rem;
+			font-weight: 200;
 
 			span {
 				display: block;

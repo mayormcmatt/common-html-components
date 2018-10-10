@@ -146,16 +146,17 @@ ul li ul li {
 
 .page-title {
   display: flex;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  height: 20rem; }
   .page-title header {
     width: 50%;
     height: 50rem;
-    margin-right: 2rem;
-    font-weight: 200; }
+    margin-right: 2rem; }
     .page-title header h1 {
       float: right;
       font-family: 'Old Standard TT', serif;
-      font-size: 2.5rem; }
+      font-size: 2.5rem;
+      font-weight: 200; }
       .page-title header h1 span {
         display: block;
         float: right;
@@ -211,11 +212,31 @@ ul li ul li {
     opacity: 0; }
   to {
     opacity: 1; } }
+.toggle-container {
+  height: 10rem; }
+  .toggle-container header {
+    height: 4rem; }
+  .toggle-container h2 {
+    float: right;
+    margin-right: 2rem;
+    font-family: 'Old Standard TT', serif;
+    font-weight: 200; }
+  .toggle-container .toggles {
+    height: 6rem;
+    display: flex;
+    justify-content: space-evenly;
+    clear: both; }
+    .toggle-container .toggles .toggle {
+      width: 10rem; }
+
 html,
 body {
   font-size: 16px;
   margin: 0;
   padding: 0;
   font-family: 'K2D', sans-serif; }
+
+section {
+  border-bottom: 1px solid #222; }
 
 /*# sourceMappingURL=main.css.map */

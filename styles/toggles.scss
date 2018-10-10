@@ -1,0 +1,26 @@
+// Styles defining various types of sliders
+.toggle-container {
+	height: 10rem;
+
+	header {
+		height: 4rem;
+	}
+
+	h2 {
+		float: right;
+		margin-right: 2rem;
+		font-family: 'Old Standard TT', serif;
+		font-weight: 200;
+	}
+
+	.toggles {
+		height: 6rem;
+		display: flex;
+		justify-content: space-evenly;
+		clear: both; // Gets rid of right margin from previous floated element
+
+		.toggle {
+			width: 10rem;
+		}
+	}
+}
