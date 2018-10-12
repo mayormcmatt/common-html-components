@@ -18,6 +18,7 @@ ul li ul {
   display: none; }
 
 ul li:hover > ul,
+ul li:focus-within > ul,
 ul li ul:hover {
   visibility: visible;
   opacity: 1;
@@ -35,7 +36,8 @@ ul li ul li {
   margin: 0;
   background-color: #666;
   top: 4rem; }
-  .dropdown li:hover {
+  .dropdown li:hover,
+  .dropdown li:focus-within {
     background-color: #444;
     transition: all 0.5s ease; }
   .dropdown a {
@@ -114,7 +116,7 @@ ul li ul li {
       align-items: center;
       justify-content: center;
       position: relative; }
-      .main-nav .nav-list .nav-item:hover {
+      .main-nav .nav-list .nav-item:hover, .main-nav .nav-list .nav-item:focus-within {
         background-color: #00cabe; }
       .main-nav .nav-list .nav-item:nth-child(2), .main-nav .nav-list .nav-item:nth-child(3), .main-nav .nav-list .nav-item:nth-child(4) {
         border-left: 2px solid white; }
@@ -192,6 +194,11 @@ ul li ul li {
           -o-animation: fadein 7s;
           animation: fadein 7s; }
 
+@keyframes traverse {
+  from {
+    margin-left: 100px; }
+  to {
+    margin-left: 1000px; } }
 @keyframes fadein {
   from {
     opacity: 0; }
@@ -227,7 +234,50 @@ ul li ul li {
     justify-content: space-evenly;
     clear: both; }
     .toggle-container .toggles .toggle {
-      width: 10rem; }
+      width: 10rem;
+      /* The switch - the box around the slider */ }
+      .toggle-container .toggles .toggle .switch {
+        position: relative;
+        display: inline-block;
+        width: 4rem;
+        height: 2rem;
+        /* The slider */
+        /* Rounded sliders */
+        /* Hide default HTML checkbox */ }
+        .toggle-container .toggles .toggle .switch .slider {
+          position: absolute;
+          cursor: pointer;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: #ccc;
+          -webkit-transition: .3s;
+          transition: .3s; }
+          .toggle-container .toggles .toggle .switch .slider:before {
+            position: absolute;
+            content: "";
+            height: 1.5rem;
+            width: 1.5rem;
+            left: 0.25rem;
+            bottom: 0.25rem;
+            background-color: white;
+            -webkit-transition: .3s;
+            transition: .3s; }
+        .toggle-container .toggles .toggle .switch .round {
+          border-radius: 2rem; }
+        .toggle-container .toggles .toggle .switch .round:before {
+          border-radius: 50%; }
+        .toggle-container .toggles .toggle .switch input {
+          display: none; }
+          .toggle-container .toggles .toggle .switch input:checked + .slider {
+            background-color: #4daeb4; }
+          .toggle-container .toggles .toggle .switch input:focus + .slider {
+            box-shadow: 0 0 1px #4daeb4; }
+          .toggle-container .toggles .toggle .switch input:checked + .slider:before {
+            -webkit-transform: translateX(2rem);
+            -ms-transform: translateX(2rem);
+            transform: translateX(2rem); }
 
 html,
 body {

@@ -12,9 +12,10 @@
 	</head>
 
 	<body>
-		<!-- Nav with left-hand hamburger menu -->
+		<!-- Nav with left-hand hamburger menu; see nav.scss for general styles -->
 		<nav class="main-nav">
 			<div class="side-bar close-sidebar">
+			<!-- See sidebar.scss for styles -->
 				<ul>
 					<li>
 						<a href="javascript:void(0);">
@@ -42,6 +43,7 @@
 			<ul class="nav-list">
 				<li class="nav-item">
 					<div class="hamburger-container">
+					<!-- See nav.scss for styles -->
 						<div class="bar1"></div>
 						<div class="bar2"></div>
 						<div class="bar3"></div>
@@ -49,6 +51,7 @@
 				</li>
 
 				<li class="nav-item">
+				<!-- See nav-dropdowns.scss for styles -->
 					<p>Stuff</p>
 					<ul class="dropdown">
 						<li><a href="javascript:void(0);" target="_blank" rel="noopener noreferrer">
@@ -98,6 +101,7 @@
 		</nav>
 
 		<section class="page-title">
+		<!-- See title.scss for styles -->
 			<header>
 				<h1>
 					<span class="first-line">Hello!</span>
@@ -110,18 +114,33 @@
 		</section>
 
 		<section class="toggle-container">
+		<!-- See toggles.scss for styles -->
 			<header>
 				<h2>Toggles</h2>
 			</header>
 
 			<div class="toggles">
-				<div class="toggle"></div>
-				<div class="toggle"></div>
+				<div class="toggle">
+					<label class="switch">
+						<input type="checkbox">
+						<span class="slider"></span>
+					</label>
+				</div>
+				<div class="toggle">
+					<label class="switch">
+						<input type="checkbox">
+						<span class="slider round"></span>
+					</label>
+				</div>
 				<div class="toggle"></div>
 				<div class="toggle"></div>
 				<div class="toggle"></div>
 			</div>
 		</section>
+
+		<!-- <section class="demo">
+			<h1>HELLO!</h1>
+		</section> -->
 	</body>
 
 	<script>
@@ -143,8 +162,8 @@
 
 		function toggleSideBar() {
 			slideNav.classList.contains('close-sidebar') ?
-			slideNav.classList.toggle('open-sidebar') :
-			slideNav.classList.toggle('close-sidebar');
+				slideNav.classList.toggle('open-sidebar') :
+				slideNav.classList.toggle('close-sidebar');
 		}
 		// END NAV SCRIPTS
 	</script>

@@ -63,6 +63,27 @@
 	}
 }
 
+// .demo {
+// 	position: relative;
+// 	height: 500px;
+
+// 	h1 {
+// 		position: absolute;
+// 		margin-left: 0;
+// 		animation: traverse 2s ease-in-out infinite alternate;
+// 	}
+// }
+
+@keyframes traverse {
+	from {
+		margin-left: 100px;
+	}
+
+	to {
+		margin-left: 1000px;
+	}
+}
+
 @keyframes fadein {
 	from {
 		opacity: 0;

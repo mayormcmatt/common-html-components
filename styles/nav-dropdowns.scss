@@ -24,6 +24,7 @@ ul li ul {
 }
 
 ul li:hover>ul,
+ul li:focus-within>ul,
 ul li ul:hover {
 	visibility: visible;
 	opacity: 1;
@@ -44,7 +45,8 @@ ul li ul li {
 	background-color: #666;
 	top: 4rem; // Depends on height of navbar
 
-	li:hover {
+	li:hover,
+	li:focus-within {
 		background-color: #444;
 		transition: all 0.5s ease;
 	}

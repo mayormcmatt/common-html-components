@@ -32,7 +32,8 @@
 			justify-content: center;
 			position: relative;
 
-			&:hover {
+			&:hover,
+			&:focus-within {
 				background-color: #00cabe;
 			}
 
